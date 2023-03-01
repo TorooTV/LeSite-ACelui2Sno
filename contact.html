@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.PNG">
+    <title>LeSite>ACelui2Sno</title>
+
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="logo">
+                <a href="#">LeSite<span>></span>ACelui<span>2</span>Sno</a>
+            </div>
+            <ul>
+                <Li class= "active">
+                    <a href="index.html">Acceuil</a>
+                </Li>
+                <Li>
+                    <a href="contact.html">Contact</a>
+                </Li>
+                <Li>
+                    <a href="info.html">Info</a>
+                </Li>
+            </ul>
+        </div>
+        <div class="but">
+            <input type="text" id="messageInput" placeholder="Message...">
+            <br><br>
+            <label>
+                <input type="radio" name="destination" value="general" checked>
+                NOIR
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="destination" value="important">
+                LGBTQ+
+            </label>
+            <br><br>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <script>
+            function sendMessage() {
+              const request = new XMLHttpRequest();
+              let webhookUrl;
+              if (document.querySelector('input[name="destination"]:checked').value === "important") {
+                webhookUrl = "https://discord.com/api/webhooks/1080447988440256583/7JGLfs8cwoPa9ZbPvxwQkgVlDYOQix_zkvb70lIsEEYuk60MpJrkqAzWJJ5_9XrqZkIN"; // URL de la chaîne importante
+              } else {
+                webhookUrl = "https://discord.com/api/webhooks/1080490170236809267/iZ4x6u1ywHjSye8Bsk7cQiUSkpkqrsWBDwdjhi7BxLLgn-TizYNiiJmrNzKUBsrQzQGn"; // URL de la chaîne générale
+              }
+              request.open("POST", webhookUrl);
+        
+              request.setRequestHeader('Content-type', 'application/json');
+        
+              const params = {
+                username: "My Webhook Name",
+                avatar_url: "",
+                content: document.getElementById("messageInput").value
+              }
+        
+              request.send(JSON.stringify(params));
+            }
+          </script>
+        
+        <div class="titre">
+            <h3>Jai une discord !!! Toro#1819</h3>
+        </div>
+        <div class="discord">
+        <a href="https://discord.gg"><img src="discord.png" alt="discord" width="300px">>
+        </div>
+    </header>
+    
+</body>
+</html>
