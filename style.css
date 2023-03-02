@@ -15,7 +15,7 @@ header{
 .logo a{
    color: floralwhite;
    padding: 0px 20px;
-   border: 1px solid#FFF;
+   border: 1px solid#fff;
    position: absolute;
    top: 10px;
    left: 10px;
@@ -39,7 +39,7 @@ ul{
 
 ul li a{
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   padding: 10px 20px ;
   text-transform: uppercase;
   border: 1px solid transparent;
@@ -49,13 +49,15 @@ ul li a{
 }
 
 ul li a:hover{
-  background: #FFF;
+  background: #fff;
   color: #000;
+  border-radius: 30px;
 }
 
 ul li.active a{
-  background: #FFF;
+  background: #fff;
   color: #000;
+  border-radius: 30px;
 }
 
 .principale{
@@ -71,7 +73,7 @@ ul li.active a{
 }
 
 .titre h1{
-  color: #FFF;
+  color: #fff;
   font-size: 60px;
 }
 
@@ -82,13 +84,13 @@ ul li.active a{
   transform: translate(-50%, -50%);
 }
 
-.titre h3{
-  color: #FFF;
+.titre{
+  color: #fff;
   font-size: 60px;
 }
 
 .info h2{
-  color: #FFF;
+  color: #fff;
   font-size: 30px;
   position: absolute;
   top: 10%;
@@ -104,7 +106,7 @@ ul li.active a{
 }
 
 .info h4{
-  color: #FFF;
+  color: #fff;
   font-size: 30px;
   position: absolute;
   top: 50%;
@@ -120,7 +122,7 @@ ul li.active a{
 }
 
 .info h5{
-  color: #FFF;
+  color: #fff;
   font-size: 30px;
   position: absolute;
   top: 30%;
@@ -168,4 +170,138 @@ ul li.active a{
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%); 
+}
+
+.carry1{
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.carry2{
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.carry3{
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.carry4{
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.shopt{
+  font-size: 20px;
+  position: relative;
+  top: 35px ;
+  color: rgb(163, 0, 228);
+}
+
+.radiant{
+  position: absolute;
+  top: 65%;
+  left: 57%;
+}
+
+.coach{
+  position: absolute;
+  top: 65%;
+  left: 12%;
+}
+
+.compte{
+  position: absolute;
+  top: 33%;
+  left: 52%;
+}
+
+.rank{
+  position: absolute;
+  top: 33%;
+  left: 15%;
+}
+
+.rouge{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.cb{
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+div.copyright {
+  position: absolute;
+  top: 90%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  padding: 10px 0;
+}
+
+div.copyright p {
+  margin: 0;
+}
+
+.cvv{
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.date{
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.carte{
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.paye{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.nom{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
 }
